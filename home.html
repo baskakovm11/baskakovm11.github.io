@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Максим Баскаков</title>
+    <link rel="stylesheet" href="stylefrom.css" />
+    <script src="work.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <input id="name" type="text" placeholder="Введите ваше имя" />
+      <button onclick="nameReturn()">Вывод имени админа</button>
+      <div class="output">
+        <p id="admin"></p>
+      </div>
+    </div>
+    <div class="containerPosl">
+      <input id="age" type="number" placeholder="Введите ваш возраст" />
+      <button onclick="age()">Ввод возраста</button>
+      <div class="output">
+        <p id="ageOutput"></p>
+      </div>
+    </div>
+    <div class="containerPosl">
+      <form>
+        <label>Пол:</label>
+        <input id="maskulinum" type="checkbox" />
+        <label for="maskulinum">Мужской</label>
+        <input id="feminine" type="checkbox" />
+        <label for="feminine">Женский</label>
+      </form>
+      <div class="containerPosl">
+        <h1>Проверка навыков</h1>
+        <form>
+          <input type="checkbox" id="math" />
+          <label for="math">Наличие навыков математики</label>
+        </form>
+        <form>
+          <input type="checkbox" id="prog" />
+          <label for="prog">Наличие навыков программирования</label>
+        </form>
+        <form>
+          <input type="checkbox" id="education" />
+          <label for="education">Наличие высшего образования</label>
+        </form>
+        <form>
+          <input type="checkbox" id="english" />
+          <label for="english">Наличие знания английского языка</label>
+        </form>
+        <form>
+          <input type="checkbox" id="design" />
+          <label for="design">Наличие навыков дизайна</label>
+        </form>
+      </div>
+
+      <div class="containerPosl">
+        <button onclick="disableCheckbox()">Запретить редактирование</button>
+        <button onclick="enableCheckbox()">Разрешить редактирование</button>
+      </div>
+      <button onclick="check()">Сдать анкету</button>
+      <form class="form_vosmut">
+        <input id="vosmut" type="checkbox" onchange="final_checkbox()" />
+        <label id="label_for_vosmut" for="vosmut">Меня возьмут</label>
+      </form>
+      <form class="form1">
+        <input id="notification" type="checkbox" />
+        <label for="notification">Я хочу получать уведомления</label>
+      </form>
+    </div>
+    <div class="containerPosl">
+      <input id="number1" type="number" placeholder="Введите число 1" />
+      <input id="number2" type="number" placeholder="Введите число 2" />
+      <button onclick="calculate()">Вычислить</button>
+      <div class="output">
+        <p id="maximum"></p>
+        <p id="minimum"></p>
+        <p id="equality"></p>
+      </div>
+    </div>
+  </body>
+</html>
